@@ -25,7 +25,33 @@
     <link rel="stylesheet" href="css/main-style.css" />
   </head>
   <body class="container">
-    <header class="header">Header</header>
+    <header class="header">
+      <!-- hamburger lines container -->
+      <div class="header__menu">
+        <div class="header__menu--line"></div>
+      </div>
+
+      <!-- overlay -->
+      <div class="header__overlay"></div>
+
+      <!-- navigations -->
+      <nav class="header__nav">
+        <a href="#" class="header__nav--logo"><img src="img/logo/logo.svg" alt="logo"></a>
+
+        <ul class="header__nav--links">
+          <li class="header__nav--links__item"><a  data-text="Home" href="#">Home</a></li>
+          <li class="header__nav--links__item"><a  data-text="About" href="#">About</a></li>
+          <li class="header__nav--links__item"><a  data-text="Classes" href="#">Classes</a></li>
+          <li class="header__nav--links__item"><a  data-text="Events" href="#">Events</a></li>
+          <li class="header__nav--links__item"><a  data-text="News" href="#">News</a></li>
+          <li class="header__nav--links__item"><a  data-text="Shop" href="#">Shop</a></li>
+
+          <div class="header__nav--links__toggle-container">
+            <input type="checkbox" name="theme" id="toggle">
+          </div>
+        </ul>
+      </nav>
+    </header>
     <section class="showcase">Showcase</section>
     <section class="motto">Motto</section>
     <section class="features">Features</section>
@@ -34,5 +60,7 @@
     <section class="clients">Clients</section>
     <section class="register">Register</section>
     <footer class="footer">Footer</footer>
+
+    <script src="js/nav.js"></script>
   </body>
 </html>
