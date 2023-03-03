@@ -10,6 +10,22 @@
   }
 }
 
+@mixin media-medium {
+  @media screen and (max-width: break-point(break-point-medium)) {
+    @content;
+  }
+}
+
+@mixin media-small {
+  @media screen and (max-width: break-point(break-point-small)) {
+    @content;
+  }
+}
+
+::selection {
+  background-color: var(--color-primary);
+}
+
 @import '1.resets';
 @import '2.variables';
 @import '3.utilities';
@@ -23,7 +39,38 @@
 @import 'testimonials';
 @import 'trainers';
 
+%bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+%section-padding {
+  padding: 6vh 4vw;
+}
+
+%section-heading {
+  font-size: font-size(font-size-medium);
+  font-weight: font-weight(font-weight-light);
+  letter-spacing: .2rem;
+  color: var(--color-quinary);
+}
+
+%section-para {
+  letter-spacing: .2rem;
+  font-family: 'Balsamic Sans', cursive;
+  color: var(--color-quinary);
+  font-size: font-size(font-size-small);
+}
+
+%section-h3 {
+  color: var(--color-quinary);
+  font-size: font-size(font-size-small);
+}
+
+%section-h4 {
+  color: var(--color-quinary);
+}
 /* smooth transition for dynamic elements*/
 html.transition,
 html.transition *,
