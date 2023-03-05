@@ -106,10 +106,10 @@
       background-color: var(--color-primary);
     }
   }
-}
 
-@include media-small {
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  @include media-small {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
 }
 
 @for $img from 1 through 9 {
@@ -124,7 +124,7 @@
     left: -100%;
   }
   100% {
-    left: 100%
+    left: 100%;
   }
 }
 
@@ -133,7 +133,7 @@
     left: 100%;
   }
   100% {
-    left: -100%
+    left: -100%;
   }
 }
 
@@ -142,7 +142,7 @@
     top: -100%;
   }
   100% {
-    top: 100%
+    top: 100%;
   }
 }
 
@@ -151,6 +151,6 @@
     top: 100%;
   }
   100% {
-    top: -100%
+    top: -100%;
   }
 }

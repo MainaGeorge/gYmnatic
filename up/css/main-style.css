@@ -170,6 +170,11 @@ i {
 .features__content--link:hover, .features__content--link:active {
   background-color: var(--color-primary);
 }
+@media screen and (max-width: 400px) {
+  .features {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+}
 
 .features__content:nth-child(1) {
   background-image: url("../img/features/features-1.jpg");
